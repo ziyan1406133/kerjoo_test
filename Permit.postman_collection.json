@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "b90b9b7d-ceb4-476b-8954-d95942660d73",
+		"name": "Permit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/kerjoo_test/permits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"kerjoo_test",
+						"permits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "description",
+							"type": "text"
+						},
+						{
+							"key": "dates[]",
+							"value": "2021-01-01",
+							"type": "text"
+						},
+						{
+							"key": "dates[]",
+							"value": "2021-01-02",
+							"type": "text"
+						},
+						{
+							"key": "attachments[]",
+							"type": "file",
+							"src": "/D:/Downloads/Pictures/92acd1ee5aa8ff2537c19e117cde12fe.jpg"
+						},
+						{
+							"key": "attachments[]",
+							"type": "file",
+							"src": "/C:/Users/ziyan/OneDrive/Documents/AAAAAAAAAAAAAAAAAAAA/CV/complete.pdf"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/kerjoo_test/permits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"kerjoo_test",
+						"permits"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
